@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes move {
+  0% {
+      transform: translateX(0px);
+  }
+  50% {
+      transform: translateX(-100px);
+  }
+  100% {
+      transform: translateX(-100px);
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+.multiplayer-box:hover {
+  animation: move 1s 1;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+.solo:hover {
+  animation: move 1s 1;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+.tetra:hover {
+  animation: move 1s 1;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+.config:hover {
+  animation: move 1s 1;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+.about:hover {
+  animation: move 1s 1;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+.multiplayer-box {
+  font-family: 'Rubik', sans-serif;
+  border: 1px solid pink;
+  text-align: left;
+  padding-left: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: pink 10px 10px 10px;
+  text-shadow: 2px 2px 2px white;
+  margin-left: 400px;
+}
+.solo {
+  font-family: 'Rubik', sans-serif;
+  border: 1px solid blue;
+  text-align: left;
+  padding-left: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: blue 10px 10px 10px;
+  text-shadow: 2px 2px 2px white;
+  margin-left: 400px;
+  text-decoration: none;
+}
+.tetra {
+  font-family: 'Rubik', sans-serif;
+  border: 1px solid Green;
+  text-align: left;
+  padding-left: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: green 10px 10px 10px;
+  text-shadow: 2px 2px 2px white;
+  margin-left: 400px;
+}
+.config {
+  font-family: 'Rubik', sans-serif;
+  border: 1px solid blueviolet;
+  text-align: left;
+  padding-left: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: blueviolet 10px 10px 10px;
+  text-shadow: 2px 2px 2px white;
+  margin-left: 400px;
+}
+.about {
+  font-family: 'Rubik', sans-serif;
+  border: 1px solid grey;
+  text-align: left;
+  padding-left: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: grey 10px 10px 10px;
+  text-shadow: 2px 2px 2px white;
+  margin-left: 400px;
+}
+body {
+  background: black;
+  text-transform: uppercase;
   color: white;
+  margin-top: 25px;
 }
-
-.App-link {
-  color: #61dafb;
+a {
+  text-decoration:none;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a:visited {
+  color:white;
 }

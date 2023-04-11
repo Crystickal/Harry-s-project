@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
@@ -31,10 +30,11 @@ function App() {
         <Route path="/multiplayer" element={<div>
             <div> <a href="/">
                 <h1>back</h1>
-            </a></div>
+            </a> </div>
             <div class="multiplayer-box">
             <h1 style={{color:"red"}}>TETRA LEAGUE</h1>
-            <h2 style={{color:"red"}}>Fight players of your skills in ranked duels</h2></div></div>}></Route>
+            <h2 style={{color:"red"}}>Fight players of your skills in ranked duels</h2></div></div>}>
+            </Route>
     </Routes>
 </BrowserRouter>
         {/* <div class="multiplayer-box" href="#">

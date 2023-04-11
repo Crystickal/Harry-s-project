@@ -27,13 +27,22 @@ function App() {
             <h2 style={{color:"grey"}}>All about Tetr.io</h2>
         </div></p>}></Route>
         <Route path="/something" element={<p>Hello</p>}></Route>
-        <Route path="/multiplayer" element={<div>
-            <div> <a href="/">
-                <h1>back</h1>
-            </a> </div>
-            <div class="multiplayer-box">
-            <h1 style={{color:"red"}}>TETRA LEAGUE</h1>
-            <h2 style={{color:"red"}}>Fight players of your skills in ranked duels</h2></div></div>}>
+        <Route path="/multiplayer" element={
+          <div>
+              <div> 
+                <a href="/">
+                  <h1>back</h1>
+                </a>
+              </div>
+              <div class="multiplayer-box">
+                <h1 style={{color:"red"}}>TETRA LEAGUE</h1>
+                <h2 style={{color:"red"}}>Fight players of your skills in ranked duels</h2>
+              </div>
+              <div class="multiplayer-box">
+                <h1 style={{color:"gray"}}>QUICK PLAY</h1>
+                <h2 style={{color:"gray"}}>Jump into an ongoing match</h2>
+              </div>
+            </div>}>
             </Route>
     </Routes>
 </BrowserRouter>
